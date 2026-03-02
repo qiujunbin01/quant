@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Data files (too large for git)
+*.xlsx
+*.csv
+data/
+数据/
+
+# Logs
+*.log
+nul
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/
+
+# Backup
+versions/
+历史版本备份/
+软著申请备份/
+💻-量化交易系统开发/
+
+# Test files
+test_*.py
+!test_*.py
+
+# Cache
+stock_list_cache.json
+app_version.json

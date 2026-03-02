@@ -1,0 +1,43 @@
+[
+  {
+    "name": "日线最优 (711%收益)",
+    "atr_threshold": 2.0,
+    "rsi_low": 50,
+    "rsi_high": 85,
+    "hi_short": 20,
+    "hi_long": 25,
+    "lo_short": 45,
+    "lo_long": 75
+  },
+  {
+    "name": "30分钟最优 (51%收益)",
+    "atr_threshold": 1.3,
+    "rsi_low": 45,
+    "rsi_high": 80,
+    "hi_short": 5,
+    "hi_long": 15,
+    "lo_short": 25,
+    "lo_long": 80
+  },
+  {
+    "name": "日线备选 (435%稳健)",
+    "atr_threshold": 1.5,
+    "rsi_low": 40,
+    "rsi_high": 75,
+    "hi_short": 15,
+    "hi_long": 20,
+    "lo_short": 20,
+    "lo_long": 90
+  },
+  {
+    "name": "30分钟备选 (稳健型)",
+    "atr_threshold": 1.3,
+    "rsi_low": 40,
+    "rsi_high": 80,
+    "hi_short": 5,
+    "hi_long": 15,
+    "lo_short": 25,
+    "lo_long": 80
+  },
+  null
+]
