@@ -7,9 +7,19 @@ import pandas as pd
 from datetime import datetime
 
 # Kimi2.5 API 配置
-API_KEY = "sk-lFgCqGHVn3RsJDj5kypKIHl79sOP9YDTTqmEfi18ck17D6Ma"
+# 优先从 Streamlit Secrets 读取，否则使用默认密钥
 BASE_URL = "https://api.moonshot.cn/v1"  # Kimi API地址
 # Kimi模型: moonshot-v1-8k, moonshot-v1-32k, moonshot-v1-128k 或 kimi-latest
+
+def get_api_key():
+    """获取API密钥，优先从Streamlit Secrets读取"""
+    try:
+        return st.secrets["KIMI_API_KEY"]
+    except (KeyError, FileNotFoundError):
+        # 本地开发时使用默认密钥
+        return "sk-lFgCqGHVn3RsJDj5kypKIHl79sOP9YDTTqmEfi18ck17D6Ma"
+
+API_KEY = get_api_key()
 
 def get_stock_news(symbol, limit=5):
     """获取个股新闻"""
